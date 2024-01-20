@@ -1,0 +1,9 @@
+ import scapy.all as scapy
+   
+   def sniff(interface):
+       packet_list = scapy.sniff(iface=interface, store=false)
+       for packet in packet_list:
+           print(packet.show())
+  
+
+   sniff("eth0")

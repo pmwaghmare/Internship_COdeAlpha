@@ -1,9 +1,8 @@
- import scapy.all as scapy
-   
-   def sniff(interface):
-       packet_list = scapy.sniff(iface=interface, store=false)
-       for packet in packet_list:
-           print(packet.show())
-  
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
 
-   sniff("eth0")
+
+print(fibonacci(10))  
